@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" role="img" aria-label="Revitalis CalmEase Anxiety Relief supplement bottle">
+  <defs>
+    <linearGradient id="bodyShade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#F3F1F8"/>
+      <stop offset="75%" stop-color="#E7E3F0"/>
+      <stop offset="100%" stop-color="#F6F4FA"/>
+    </linearGradient>
+    <linearGradient id="capShade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B7FC4"/>
+      <stop offset="50%" stop-color="#6E5FAE"/>
+      <stop offset="100%" stop-color="#5C4E97"/>
+    </linearGradient>
+    <linearGradient id="bandGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4B24C"/>
+      <stop offset="50%" stop-color="#C59B27"/>
+      <stop offset="100%" stop-color="#B8892099"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="250" cy="662" rx="118" ry="14" fill="#0C1A12" opacity="0.08"/>
+
+  <path d="M210,140 L290,140 L360,222 L140,222 Z" fill="url(#bodyShade)" stroke="#DCD6EA" stroke-width="1.5"/>
+
+  <rect x="140" y="222" width="220" height="428" rx="34" fill="url(#bodyShade)" stroke="#DCD6EA" stroke-width="1.5"/>
+
+  <rect x="188" y="50" width="124" height="24" rx="10" fill="url(#capShade)"/>
+  <rect x="196" y="70" width="108" height="82" rx="16" fill="url(#capShade)"/>
+  <g stroke="#4B3F85" stroke-width="2" opacity="0.55">
+    <line x1="196" y1="92" x2="304" y2="92"/>
+    <line x1="196" y1="104" x2="304" y2="104"/>
+    <line x1="196" y1="116" x2="304" y2="116"/>
+    <line x1="196" y1="128" x2="304" y2="128"/>
+  </g>
+
+  <rect x="168" y="278" width="164" height="312" rx="14" fill="#FCFBFE" stroke="#C9BFE0" stroke-width="2"/>
+
+  <circle cx="250" cy="322" r="27" fill="#EDE8F7" stroke="#6E5FAE" stroke-width="1.5"/>
+  <path d="M250,309 C262,311 269,320 267,331 C265,340 256,336 251,331 C246,326 244,315 250,309 Z"
+        fill="#6E5FAE"/>
+  <path d="M250,309 C247,317 248,326 258,333" fill="none" stroke="#EDE8F7" stroke-width="1.6" stroke-linecap="round"/>
+
+  <text x="250" y="374" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14" letter-spacing="3" fill="#1F2A22">REVITALIS</text>
+
+  <text x="250" y="415" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="36" fill="#5C4E97">CalmEase</text>
+
+  <text x="250" y="437" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="12" letter-spacing="1.5" fill="#6B6478">ANXIETY RELIEF FORMULA</text>
+
+  <line x1="196" y1="456" x2="304" y2="456" stroke="#C59B27" stroke-width="1.5"/>
+
+  <text x="250" y="480" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="13" fill="#2D2A38">60 CAPSULES | 500mg</text>
+  <text x="250" y="500" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10.5" letter-spacing="1" fill="#8A8496">DIETARY SUPPLEMENT</text>
+
+  <rect x="168" y="514" width="164" height="26" rx="6" fill="none" stroke="#DCD6EA" stroke-width="1"/>
+  <text x="250" y="531" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="9.5" letter-spacing="0.5" fill="#5C4E97">L-THEANINE • ASHWAGANDHA • MAGNESIUM</text>
+
+  <rect x="140" y="600" width="220" height="38" fill="url(#bandGold)"/>
+  <text x="250" y="624" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="13" letter-spacing="1.5" fill="#2A210A">NATURAL CALM FORMULA</text>
+</svg>

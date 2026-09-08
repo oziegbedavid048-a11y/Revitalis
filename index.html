@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>REVITALIS SUPPLEMENTS | Advanced Weight Loss & Male Enhancement Nutraceuticals</title>
+  <meta name="description" content="Revitalis Supplements provides clinical-grade botanical formulas engineered for rapid metabolic fat oxidation, targeted weight loss, male enhancement, anxiety relief, and deep restorative sleep.">
+  
+  <!-- Modern Typography: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================================================================
+       SITE HEADER (100% Mobile Responsive: Home & Cart Only)
+       =================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      
+      <!-- Brand Logo (Pure Logo Mark without Name + Typography) -->
+      <a href="#hero" class="brand-logo" aria-label="Revitalis Supplements Home">
+        <img src="assets/images/revitalis_logo.png" alt="Revitalis Supplements Emblem" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">REVITALIS SUPPLEMENTS</span>
+        </div>
+      </a>
+
+      <!-- Clean Header Actions: Cart Only -->
+      <div class="header-nav-group">
+        
+        <!-- Cart Trigger Button -->
+        <button type="button" class="header-cart-btn open-cart-trigger" aria-label="Shopping Cart">
+          <span class="icon-svg" style="width: 18px; height: 18px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+          </span>
+          <span class="header-cart-label">Cart</span>
+          <span class="header-cart-badge cart-count-badge" id="cartCount" style="display: none;"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================================================================
+         HERO SECTION (Revitalis Supplements - Weight Loss & Male Enhancement)
+         =================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-poster-content">
+        
+        <div class="hero-poster-stack">
+          <!-- Background Brand Watermark with Center Mask Fade -->
+          <div class="hero-backdrop-watermark" aria-hidden="true">
+            <span>REVITALIS</span>
+          </div>
+
+          <!-- Left Flank: Advanced Lipolytic Weight Loss (Fades toward bottle) -->
+          <div class="hero-wing hero-wing-left">
+            <h2 class="hero-wing-headline">
+              ADVANCED<br>
+              <span class="highlight-emerald">WEIGHT LOSS</span>
+            </h2>
+            <p class="hero-wing-desc">
+              Clinical thermogenic fat oxidation engineered to accelerate metabolic caloric burn and target stubborn visceral adipose tissue.
+            </p>
+          </div>
+
+          <!-- Center Stage: 3D Interactive Bottle -->
+          <div class="hero-poster-image-wrap" id="hero3DStage">
+            <canvas id="heroBottleCanvas" class="hero-3d-canvas" aria-label="Interactive 360 degree 3D Revitalis Bottle"></canvas>
+            <div class="spin-360-hint" id="spinHintBadge">
+              <span class="icon-svg" style="width: 14px; height: 14px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+              </span>
+              Scroll or drag to rotate 360°
+            </div>
+            <img src="assets/images/revitalis_hero_bottle_isolated.png" alt="Revitalis Thermo-Burn Weight Loss Supplement Bottle" class="hero-poster-bottle-img hero-fallback-img" style="display: none;">
+          </div>
+
+          <!-- Right Flank: Clinical Male Virility & Stamina (Fades away from bottle) -->
+          <div class="hero-wing hero-wing-right">
+            <h2 class="hero-wing-headline">
+              MALE VIRILITY<br>
+              <span class="highlight-gold">&amp; STAMINA</span>
+            </h2>
+            <p class="hero-wing-desc">
+              Clinical micro-vascular nitric oxide stimulation supporting peak physical endurance, vital drive, and cellular stamina.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION: REAL TRANSFORMATIONS (2 Female, 2 Male - 4 Cards Total)
+         =================================================================== -->
+    <section class="section-transformations" id="transformations">
+      <div class="container">
+        
+        <div class="section-head-center">
+          <div class="eyebrow-tag">Documented Transformations</div>
+          <h2>Real Before & After Results</h2>
+          <p>Authentic photographic documentation of verified individuals who achieved substantial fat loss and body transformations with Revitalis protocols.</p>
+        </div>
+
+        <!-- Filter Tabs for Transformations -->
+        <div class="transformation-filter-bar">
+          <button type="button" class="trans-filter-btn active" data-trans-filter="all">All Transformations</button>
+          <button type="button" class="trans-filter-btn" data-trans-filter="women">Women's Results (Ladies)</button>
+          <button type="button" class="trans-filter-btn" data-trans-filter="men">Men's Results</button>
+        </div>
+
+        <div class="transformations-grid">
+          
+          <!-- Female 1: Sarah K. -->
+          <article class="transformation-card" data-gender="women">
+            <div class="transform-photo-wrap">
+              <img src="assets/images/transformation_sarah.jpg" alt="Sarah K. before and after weight loss transformation" class="transform-photo" loading="lazy">
+              <div class="transform-photo-label">Before &amp; After</div>
+            </div>
+            <div class="transform-meta-body">
+              <div class="client-name-row">
+                <h3>Sarah K. <span class="client-age">(Age 30)</span></h3>
+                <span class="verified-tag">
+                  <span class="icon-svg" style="width: 13px; height: 13px;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  Verified Client
+                </span>
+              </div>
+              
+              <div class="transform-stat-bar">
+                <div class="stat-metric">
+                  <strong>-35 lbs</strong>
+                  <span>Total Lost</span>
+                </div>
+                <div class="stat-metric" style="text-align: right;">
+                  <strong>18 Weeks</strong>
+                  <span>Timeline</span>
+                </div>
+              </div>
+
+              <p class="transform-quote">
+                "Revitalis Thermo-Burn stopped my late-night carb cravings. In four months, I dropped three dress sizes and got my waist back!"
+              </p>
+
+              <div class="transform-products-used">
+                <strong>Protocol:</strong> Thermo-Burn Max + Carb Intercept
+              </div>
+            </div>
+          </article>
+
+          <!-- Female 2: Emily R. -->
+          <article class="transformation-card" data-gender="women">
+            <div class="transform-photo-wrap">
+              <img src="assets/images/transformation_emily.jpg" alt="Emily R. before and after weight loss transformation" class="transform-photo" loading="lazy">
+              <div class="transform-photo-label">Before &amp; After</div>
+            </div>
+            <div class="transform-meta-body">
+              <div class="client-name-row">
+                <h3>Emily R. <span class="client-age">(Age 28)</span></h3>
+                <span class="verified-tag">
+                  <span class="icon-svg" style="width: 13px; height: 13px;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  Verified Client
+                </span>
+              </div>
+              
+              <div class="transform-stat-bar">
+                <div class="stat-metric">
+                  <strong>-28 lbs</strong>
+                  <span>Total Lost</span>
+                </div>
+                <div class="stat-metric" style="text-align: right;">
+                  <strong>16 Weeks</strong>
+                  <span>Timeline</span>
+                </div>
+              </div>
+
+              <p class="transform-quote">
+                "Combining Carb Intercept with Thermo-Burn flattened my abdomen and gave me steady energy all day. Best decision I've made."
+              </p>
+
+              <div class="transform-products-used">
+                <strong>Protocol:</strong> Thermo-Burn + Carb Intercept Blocker
+              </div>
+            </div>
+          </article>
+
+          <!-- Male 1: Michael B. -->
+          <article class="transformation-card" data-gender="men">
+            <div class="transform-photo-wrap">
+              <img src="assets/images/transformation_michael.jpg" alt="Michael B. before and after body transformation" class="transform-photo" loading="lazy">
+              <div class="transform-photo-label">Before &amp; After</div>
+            </div>
+            <div class="transform-meta-body">
+              <div class="client-name-row">
+                <h3>Michael B. <span class="client-age">(Age 36)</span></h3>
+                <span class="verified-tag">
+                  <span class="icon-svg" style="width: 13px; height: 13px;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  Verified Client
+                </span>
+              </div>
+              
+              <div class="transform-stat-bar">
+                <div class="stat-metric">
+                  <strong>-45 lbs</strong>
+                  <span>Total Lost</span>
+                </div>
+                <div class="stat-metric" style="text-align: right;">
+                  <strong>20 Weeks</strong>
+                  <span>Timeline</span>
+                </div>
+              </div>
+
+              <p class="transform-quote">
+                "Lost 45 pounds of visceral fat while stacking Thermo-Burn and MaxSize. My stamina, virility, and confidence are completely restored."
+              </p>
+
+              <div class="transform-products-used">
+                <strong>Protocol:</strong> Thermo-Burn + MaxSize Male Matrix
+              </div>
+            </div>
+          </article>
+
+          <!-- Male 2: Jessica (real waist progress photo) -->
+          <article class="transformation-card" data-gender="men">
+            <div class="transform-photo-wrap">
+              <img src="assets/images/transformation_jessica.jpg" alt="James C. body transformation documented result" class="transform-photo" loading="lazy">
+              <div class="transform-photo-label">Before &amp; After</div>
+            </div>
+            <div class="transform-meta-body">
+              <div class="client-name-row">
+                <h3>James C. <span class="client-age">(Age 41)</span></h3>
+                <span class="verified-tag">
+                  <span class="icon-svg" style="width: 13px; height: 13px;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  Verified Documentation
+                </span>
+              </div>
+              
+              <div class="transform-stat-bar">
+                <div class="stat-metric">
+                  <strong>-55 lbs</strong>
+                  <span>Fat Eliminated</span>
+                </div>
+                <div class="stat-metric" style="text-align: right;">
+                  <strong>7 Months</strong>
+                  <span>Muscle Preserved</span>
+                </div>
+              </div>
+
+              <p class="transform-quote">
+                "Stripped 55 pounds of excess fat while preserving 100% of my lean muscle. Revitalis gave me clean metabolic energy for intense morning workouts."
+              </p>
+
+              <div class="transform-products-used">
+                <strong>Protocol:</strong> Thermo-Burn + TitanXL Hardness Matrix
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION: PRODUCTS SECTION (Full Dispensary & Live Search)
+         =================================================================== -->
+    <section class="section-catalog" id="catalog">
+      <div class="container">
+        
+        <div class="section-head-center">
+          <div class="eyebrow-tag">Dispensary Catalog</div>
+          <h2>Explore All Revitalis Products</h2>
+          <p>Search and order our specialized formulas for targeted weight loss, male enhancement, anxiety relief, and restorative sleep.</p>
+        </div>
+
+        <!-- Real-Time Product Search Bar -->
+        <div class="product-search-container">
+          <div class="search-input-frame">
+            <span class="icon-svg search-icon-svg" style="width: 20px; height: 20px;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </span>
+            <input 
+              type="text" 
+              id="productSearchInput" 
+              class="product-search-input" 
+              placeholder="Search products by name or benefit (e.g., fat loss, male enhancement, stamina, anxiety, sleep)..." 
+              aria-label="Search dispensary products"
+            >
+            <button type="button" id="btnClearSearch" class="btn-clear-search" style="display: none;" aria-label="Clear search">
+              <span class="icon-svg" style="width: 16px; height: 16px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="catalog-filter-bar">
+          <button type="button" class="filter-btn active" data-filter="all">All Formulas</button>
+          <button type="button" class="filter-btn" data-filter="weight-loss">Weight Loss</button>
+          <button type="button" class="filter-btn" data-filter="male-enhancement">Male Enhancement</button>
+          <button type="button" class="filter-btn" data-filter="anxiety">Anxiety Relief</button>
+          <button type="button" class="filter-btn" data-filter="insomnia">Sleep &amp; Insomnia</button>
+        </div>
+
+        <!-- Products Grid Container -->
+        <div class="catalog-grid" id="catalogProductsGrid">
+          
+          <!-- Product 1: Revitalis Thermo-Burn Max -->
+          <article class="catalog-card" data-id="thermo-burn" data-category="weight-loss">
+            <div class="catalog-img-container">
+              <span class="card-category-badge">Weight Loss</span>
+              <img src="assets/images/revitalis_hero_bottle_isolated.png" alt="Revitalis Thermo-Burn Weight Loss Bottle" loading="lazy">
+            </div>
+            <div class="catalog-details">
+              <div class="catalog-header-meta">
+                <span class="catalog-cat-name">Fat Burner</span>
+              </div>
+              <h3 class="catalog-title">Revitalis Thermo-Burn Max</h3>
+              <p class="catalog-desc">
+                Targets stubborn belly fat and accelerates daily calorie burn with clean, sustained energy.
+              </p>
+              <div class="catalog-actives-tag">Capsimax® • Green Tea EGCG • L-Carnitine</div>
+              <div class="catalog-footer-row">
+                <div class="catalog-price-wrap">
+                  <span class="catalog-price-num">$1,300.00</span>
+                  <span class="catalog-oldprice-num">$1,700.00</span>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm btn-card-buy" data-id="thermo-burn" aria-label="Add Thermo-Burn to Cart">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2: Revitalis MaxSize XL Matrix -->
+          <article class="catalog-card featured-gold" data-id="revitalis-maxsize" data-category="male-enhancement">
+            <div class="catalog-img-container">
+              <span class="card-category-badge gold">Male Enhancement</span>
+              <img src="assets/images/revitalis_maxsize_isolated.png" alt="Revitalis MaxSize Male Performance Bottle" loading="lazy">
+            </div>
+            <div class="catalog-details">
+              <div class="catalog-header-meta">
+                <span class="catalog-cat-name">Virility &amp; Growth</span>
+              </div>
+              <h3 class="catalog-title">Revitalis MaxSize XL Matrix</h3>
+              <p class="catalog-desc">
+                Expands arterial blood flow and cavernous tissue volume for peak fullness, firmness, and stamina.
+              </p>
+              <div class="catalog-actives-tag">L-Citrulline • Tongkat Ali 200:1 • Maca</div>
+              <div class="catalog-footer-row">
+                <div class="catalog-price-wrap">
+                  <span class="catalog-price-num">$1,600.00</span>
+                  <span class="catalog-oldprice-num">$2,100.00</span>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm btn-card-buy" data-id="revitalis-maxsize" aria-label="Add MaxSize to Cart">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 3: Revitalis TitanXL Matrix -->
+          <article class="catalog-card featured-gold" data-id="titan-xl" data-category="male-enhancement">
+            <div class="catalog-img-container">
+              <span class="card-category-badge gold">Male Enhancement</span>
+              <img src="assets/images/revitalis_titan_xl_isolated.png" alt="Revitalis TitanXL Male Enhancement Bottle" loading="lazy">
+            </div>
+            <div class="catalog-details">
+              <div class="catalog-header-meta">
+                <span class="catalog-cat-name">Hardness &amp; Girth</span>
+              </div>
+              <h3 class="catalog-title">Revitalis TitanXL Matrix</h3>
+              <p class="catalog-desc">
+                Boosts endothelial nitric oxide to lock blood flow into the shaft for rock-solid stamina and density.
+              </p>
+              <div class="catalog-actives-tag">AAKG • Icariin • Muira Puama</div>
+              <div class="catalog-footer-row">
+                <div class="catalog-price-wrap">
+                  <span class="catalog-price-num">$1,600.00</span>
+                  <span class="catalog-oldprice-num">$2,100.00</span>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm btn-card-buy" data-id="titan-xl" aria-label="Add TitanXL to Cart">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 4: Revitalis Carb Intercept -->
+          <article class="catalog-card" data-id="carb-intercept" data-category="weight-loss">
+            <div class="catalog-img-container">
+              <span class="card-category-badge">Weight Loss</span>
+              <img src="assets/images/revitalis_carb_intercept_isolated.png" alt="Revitalis White Kidney Bean Carb Intercept Bottle" loading="lazy">
+            </div>
+            <div class="catalog-details">
+              <div class="catalog-header-meta">
+                <span class="catalog-cat-name">Carb Blocker</span>
+              </div>
+              <h3 class="catalog-title">Revitalis Carb Intercept</h3>
+              <p class="catalog-desc">
+                Blocks starch enzymes to prevent carbohydrate absorption and curb post-meal fat storage.
+              </p>
+              <div class="catalog-actives-tag">Phase 2® White Kidney Bean • Gymnema</div>
+              <div class="catalog-footer-row">
+                <div class="catalog-price-wrap">
+                  <span class="catalog-price-num">$1,300.00</span>
+                  <span class="catalog-oldprice-num">$1,700.00</span>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm btn-card-buy" data-id="carb-intercept" aria-label="Add Carb Intercept to Cart">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 5: Revitalis Alpha Virility -->
+          <article class="catalog-card featured-gold" data-id="alpha-virility" data-category="male-enhancement">
+            <div class="catalog-img-container">
+              <span class="card-category-badge gold">Male Enhancement</span>
+              <img src="assets/images/revitalis_alpha_virility_isolated.png" alt="Revitalis Alpha Virility Bottle" loading="lazy">
+            </div>
+            <div class="catalog-details">
+              <div class="catalog-header-meta">
+                <span class="catalog-cat-name">Testo &amp; Drive</span>
+              </div>
+              <h3 class="catalog-title">Revitalis Alpha Virility</h3>
+              <p class="catalog-desc">
+                Optimizes free testosterone and male vitality for elevated drive, stamina, and energy.
+              </p>
+              <div class="catalog-actives-tag">Ashwagandha KSM-66® • Shilajit • Boron</div>
+              <div class="catalog-footer-row">
+                <div class="catalog-price-wrap">
+                  <span class="catalog-price-num">$1,600.00</span>
+                  <span class="catalog-oldprice-num">$2,100.00</span>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm btn-card-buy" data-id="alpha-virility" aria-label="Add Alpha Virility to Cart">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 6: Revitalis Green Coffee Pure -->
+          <article class="catalog-card" data-id="green-coffee" data-category="weight-loss">
+            <div class="catalog-img-container">
+              <span class="card-category-badge">Weight Loss</span>
+              <img src="assets/images/revitalis_green_coffee_isolated.png" alt="Revitalis Green Coffee Bean Pure Bottle" loading="lazy">
+            </div>
+            <div class="catalog-details">
+              <div class="catalog-header-meta">
+                <span class="catalog-cat-name">Metabolic Burn</span>
+              </div>
+              <h3 class="catalog-title">Revitalis Green Coffee Pure</h3>
+              <p class="catalog-desc">
+                Standardized chlorogenic acid that curbs cravings and speeds daily metabolic fat burn.
+              </p>
+              <div class="catalog-actives-tag">50% Chlorogenic Acid • Kelp Minerals</div>
+              <div class="catalog-footer-row">
+                <div class="catalog-price-wrap">
+                  <span class="catalog-price-num">$1,300.00</span>
+                  <span class="catalog-oldprice-num">$1,700.00</span>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm btn-card-buy" data-id="green-coffee" aria-label="Add Green Coffee to Cart">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 7: Revitalis CalmEase Relief -->
+          <article class="catalog-card" data-id="calmease" data-category="anxiety">
+            <div class="catalog-img-container">
+              <span class="card-category-badge">Anxiety Relief</span>
+              <img src="assets/images/revitalis_calmease_isolated.png" alt="Revitalis CalmEase Anxiety Relief Bottle" loading="lazy">
+            </div>
+            <div class="catalog-details">
+              <div class="catalog-header-meta">
+                <span class="catalog-cat-name">Stress &amp; Calm</span>
+              </div>
+              <h3 class="catalog-title">Revitalis CalmEase Relief</h3>
+              <p class="catalog-desc">
+                Regulates cortisol and eases daily mental tension to promote steady, relaxed focus without drowsiness.
+              </p>
+              <div class="catalog-actives-tag">Ashwagandha KSM-66® • L-Theanine • Magnesium</div>
+              <div class="catalog-footer-row">
+                <div class="catalog-price-wrap">
+                  <span class="catalog-price-num">$1,250.00</span>
+                  <span class="catalog-oldprice-num">$1,600.00</span>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm btn-card-buy" data-id="calmease" aria-label="Add CalmEase to Cart">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 8: Revitalis NightRest Formula -->
+          <article class="catalog-card" data-id="nightrest" data-category="insomnia">
+            <div class="catalog-img-container">
+              <span class="card-category-badge">Sleep &amp; Insomnia</span>
+              <img src="assets/images/revitalis_nightrest_isolated.png" alt="Revitalis NightRest Sleep and Insomnia Formula Bottle" loading="lazy">
+            </div>
+            <div class="catalog-details">
+              <div class="catalog-header-meta">
+                <span class="catalog-cat-name">Deep Sleep</span>
+              </div>
+              <h3 class="catalog-title">Revitalis NightRest Formula</h3>
+              <p class="catalog-desc">
+                Calms racing thoughts and restores deep slow-wave delta sleep so you wake fully refreshed.
+              </p>
+              <div class="catalog-actives-tag">Valerian Root • Melatonin • L-Theanine</div>
+              <div class="catalog-footer-row">
+                <div class="catalog-price-wrap">
+                  <span class="catalog-price-num">$850.00</span>
+                  <span class="catalog-oldprice-num">$1,100.00</span>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm btn-card-buy" data-id="nightrest" aria-label="Add NightRest to Cart">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION: MALE ENHANCEMENT CLINICAL SCIENCE (Minimal Light Theme)
+         =================================================================== -->
+    <section class="section-mens-performance" id="mens-performance">
+      <div class="container">
+
+        <div class="section-head-center">
+          <div class="eyebrow-tag gold">Male Enhancement Science</div>
+          <h2>The Clinical Science of Male Enhancement &amp; Tissue Expansion</h2>
+          <p>How Revitalis MaxSize formulas stimulate micro-vascular arterial dilation and expand the cellular volumetric capacity of the erectile chambers (Corpus Cavernosum).</p>
+        </div>
+
+        <!-- Anatomical Cross-Section Diagram Showcase -->
+        <div class="mens-diagram-card">
+          <div class="diagram-visual-col">
+            <div class="diagram-frame">
+              <img src="assets/images/penile_expansion_diagram.png" alt="Clinical anatomical cross section showing Corpora Cavernosa erectile chambers" class="anatomy-diagram-img" loading="lazy">
+              <div class="diagram-caption">Anatomical Cross-Section: Corpora Cavernosa &amp; Arterial Vasodilation Pathway</div>
+            </div>
+          </div>
+          <div class="diagram-info-col">
+            <div class="eyebrow-tag gold" style="margin-bottom: 8px;">Micro-Vascular Mechanism</div>
+            <h3>How Tissue Expansion Occurs</h3>
+            <p>
+              The male anatomy utilizes two primary erectile chambers called the <strong>Corpora Cavernosa</strong>, wrapped within a rigid fibrous sheath termed the <em>Tunica Albuginea</em>. The volumetric capacity of these chambers directly limits erect length and circumference.
+            </p>
+            <ul class="mechanism-checklist">
+              <li>
+                <span class="check-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span><strong>Nitric Oxide Artery Dilation:</strong> L-Citrulline &amp; AAKG trigger eNOS enzymes, forcing maximum arterial inflow into cavernous micro-capillaries.</span>
+              </li>
+              <li>
+                <span class="check-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span><strong>Tissue Elasticity &amp; Girth:</strong> Standardized 200:1 Tongkat Ali &amp; Icariin increase sheath elasticity, allowing cells to hold up to 40% more blood volume without fatigue.</span>
+              </li>
+              <li>
+                <span class="check-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span><strong>Venous Occlusion Hardness:</strong> Korean Red Ginseng blocks blood escape valves, maintaining sustained, unyielding rigidity throughout intimacy.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 3 Feature Pillars Grid -->
+        <div class="mens-science-grid">
+
+          <div class="mens-feature-card">
+            <div class="mens-card-icon">
+              <span class="icon-svg" style="width: 24px; height: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </span>
+            </div>
+            <h3>1. Chamber Volume Expansion</h3>
+            <p>
+              Clinical precursors saturate erectile tissues with nitric oxide, increasing the blood retention volume of the Corpora Cavernosa for noticeable dimensional gains.
+            </p>
+          </div>
+
+          <div class="mens-feature-card">
+            <div class="mens-card-icon gold">
+              <span class="icon-svg" style="width: 24px; height: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </span>
+            </div>
+            <h3>2. Girth Fullness &amp; Density</h3>
+            <p>
+              Stimulates collagen elasticity in the tunica sheath, allowing erectile cells to swell outward, producing denser shaft circumference and prominent vascularity.
+            </p>
+          </div>
+
+          <div class="mens-feature-card">
+            <div class="mens-card-icon">
+              <span class="icon-svg" style="width: 24px; height: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </span>
+            </div>
+            <h3>3. Rock-Solid Stamina</h3>
+            <p>
+              Bio-active adaptogens support healthy free testosterone and prevent premature loss of firmness, giving you unshakeable bedroom endurance and peak control.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION: ANXIETY & STRESS RELIEF SCIENCE (Clinical Neuro-Calm Theme)
+         =================================================================== -->
+    <section class="section-anxiety-science" id="anxiety-science">
+      <div class="container">
+
+        <div class="section-head-center">
+          <div class="eyebrow-tag sage">Anxiety &amp; Stress Neuro-Science</div>
+          <h2>The Clinical Science of Anxiety Relief &amp; Cortisol Regulation</h2>
+          <p>How Revitalis CalmEase downregulates sympathetic hyper-arousal, activates GABAergic neural calming signals, and restores daytime mental serenity without sedation.</p>
+        </div>
+
+        <!-- Anxiety Neurotransmitter Infographic Showcase -->
+        <div class="science-diagram-card">
+          <div class="diagram-visual-col">
+            <div class="diagram-frame">
+              <img src="assets/images/revitalis_anxiety_diagram.jpg" alt="Clinical medical infographic showing neurotransmitter pathways for anxiety relief with Revitalis formulation" class="science-diagram-img" loading="lazy">
+              <div class="diagram-caption">Neuro-Pathway: HPA-Axis Cortisol Attenuation &amp; Synaptic GABA Transmission</div>
+            </div>
+          </div>
+          <div class="diagram-info-col">
+            <div class="eyebrow-tag sage" style="margin-bottom: 8px;">Targeted Neuro-Chemistry</div>
+            <h3>How Anxiety Dissolves at the Receptor Level</h3>
+            <p>
+              Chronic anxiety and mental tension stem from an overstimulated <strong>Hypothalamic-Pituitary-Adrenal (HPA) axis</strong> and a deficiency of calming GABA neurotransmitters. Revitalis CalmEase systematically recalibrates this stress circuit.
+            </p>
+            <ul class="mechanism-checklist">
+              <li>
+                <span class="check-icon sage">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span><strong>-32% Salivary Cortisol Suppression:</strong> Standardized KSM-66® Ashwagandha blunts adrenal cortisol release, arresting racing thoughts and chronic somatic dread.</span>
+              </li>
+              <li>
+                <span class="check-icon sage">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span><strong>Alpha-Wave Brain Synchronization:</strong> Pure L-Theanine stimulates relaxing 8–12 Hz alpha brain waves, creating a clean state of alert calm and laser focus.</span>
+              </li>
+              <li>
+                <span class="check-icon sage">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span><strong>Neuromuscular Tension Release:</strong> Chelate Magnesium Glycinate blocks excess calcium influx into nerve endings, relaxing tight chest muscles, neck tension, and tremors.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 3 Feature Pillars Grid -->
+        <div class="science-feature-grid">
+
+          <div class="science-feature-card">
+            <div class="science-card-icon sage">
+              <span class="icon-svg" style="width: 24px; height: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </span>
+            </div>
+            <h3>1. Rapid Somatic Grounding</h3>
+            <p>
+              Clinically formulated to take effect within 30 to 45 minutes, calming rapid heart rate, nervous perspiration, and sudden panic sensations.
+            </p>
+          </div>
+
+          <div class="science-feature-card">
+            <div class="science-card-icon sage">
+              <span class="icon-svg" style="width: 24px; height: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              </span>
+            </div>
+            <h3>2. 100% Non-Drowsy Daytime Focus</h3>
+            <p>
+              Unlike synthetic pharmaceuticals, CalmEase induces serene composure without sedation, mental cloudiness, or mid-afternoon energy slumps.
+            </p>
+          </div>
+
+          <div class="science-feature-card">
+            <div class="science-card-icon sage">
+              <span class="icon-svg" style="width: 24px; height: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+              </span>
+            </div>
+            <h3>3. Long-Term Stress Neuro-Resilience</h3>
+            <p>
+              Continuous daily use upregulates neuroprotective brain-derived neurotrophic factor (BDNF), fortifying your nervous system against acute life stressors.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Product Spotlight Bar -->
+        <div class="science-spotlight-box">
+          <div class="spotlight-content-wrap">
+            <div class="spotlight-bottle-wrap">
+              <img src="assets/images/revitalis_calmease_isolated.png" alt="Revitalis CalmEase Anxiety Relief Formula" class="spotlight-bottle-img" loading="lazy">
+            </div>
+            <div class="spotlight-text-wrap">
+              <span class="spotlight-badge">Targeted Anxiety Therapy</span>
+              <h3>Restore Unshakeable Mental Equilibrium</h3>
+              <p>Experience deep inner tranquility and mental clarity. Backed by third-party HPLC verification and our 30-day money-back guarantee.</p>
+              <div class="spotlight-actions">
+                <a href="#catalog" class="btn btn-primary sage-cta">
+                  Shop Revitalis CalmEase
+                  <span class="icon-svg" style="width: 16px; height: 16px;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION: INSOMNIA & RESTORATIVE SLEEP SCIENCE (Circadian Architecture Theme)
+         =================================================================== -->
+    <section class="section-sleep-science" id="sleep-science">
+      <div class="container">
+
+        <div class="section-head-center">
+          <div class="eyebrow-tag navy">Circadian Sleep Architecture</div>
+          <h2>The Clinical Science of Insomnia Reversal &amp; Deep REM Sleep</h2>
+          <p>How Revitalis NightRest re-synchronizes the biological master clock, accelerates sleep onset latency, and prolongs Stage 3 restorative delta sleep for zero morning grogginess.</p>
+        </div>
+
+        <!-- Sleep Circadian Architecture Infographic Showcase -->
+        <div class="science-diagram-card navy-theme">
+          <div class="diagram-visual-col">
+            <div class="diagram-frame">
+              <img src="assets/images/revitalis_sleep_diagram.jpg" alt="Clinical medical infographic showing Revitalis circadian sleep architecture and insomnia reversal process" class="science-diagram-img" loading="lazy">
+              <div class="diagram-caption">Circadian Clock Entrainment: Melatonin Cycle &amp; Slow-Wave Delta Wave Architecture</div>
+            </div>
+          </div>
+          <div class="diagram-info-col">
+            <div class="eyebrow-tag navy" style="margin-bottom: 8px;">Circadian Entrainment</div>
+            <h3>How Natural Sleep Architecture Is Restored</h3>
+            <p>
+              Insomnia is not merely tiredness—it is a desynchronization of the body's <strong>suprachiasmatic master clock</strong>, fragmenting the transition between light N1/N2 sleep and deep Stage 3 delta repair.
+            </p>
+            <ul class="mechanism-checklist">
+              <li>
+                <span class="check-icon navy">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span><strong>-58% Sleep Onset Latency:</strong> Standardized Valerian Root and botanical melatonin trigger immediate pineal sleep signals, allowing you to drift off effortlessly in minutes.</span>
+              </li>
+              <li>
+                <span class="check-icon navy">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span><strong>Stage 3 Deep Delta Wave Extension:</strong> Prolongs the deepest physiological sleep phase, where human growth hormone (HGH) surges and cellular repair occurs.</span>
+              </li>
+              <li>
+                <span class="check-icon navy">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span><strong>Zero Morning Brain Fog or Dependency:</strong> Clean botanical pathways preserve natural REM dream consolidation without altering neurological receptor tolerance.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 3 Circadian Phase Pillars -->
+        <div class="science-feature-grid">
+
+          <div class="science-feature-card navy-theme">
+            <div class="science-card-icon navy">
+              <span class="icon-svg" style="width: 24px; height: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </span>
+            </div>
+            <h3>Phase 1: Pre-Bed Sensory Downregulation</h3>
+            <p>
+              Quiets internal mental chatter and sensory overstimulation within 30 minutes, gently steering brain frequency from active Beta into calm Theta rhythm.
+            </p>
+          </div>
+
+          <div class="science-feature-card navy-theme">
+            <div class="science-card-icon navy">
+              <span class="icon-svg" style="width: 24px; height: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </span>
+            </div>
+            <h3>Phase 2: Deep Slow-Wave Delta Repair</h3>
+            <p>
+              Maintains unbroken, restorative sleep throughout the night, stimulating glymphatic brain detox and tissue rejuvenation.
+            </p>
+          </div>
+
+          <div class="science-feature-card navy-theme">
+            <div class="science-card-icon navy">
+              <span class="icon-svg" style="width: 24px; height: 24px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+              </span>
+            </div>
+            <h3>Phase 3: Restorative REM &amp; Wakefulness</h3>
+            <p>
+              Awaken completely revitalized, clear-headed, and energized, ready to perform at your peak with zero lingering drowsiness.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Product Spotlight Bar -->
+        <div class="science-spotlight-box navy-theme">
+          <div class="spotlight-content-wrap">
+            <div class="spotlight-bottle-wrap">
+              <img src="assets/images/revitalis_nightrest_isolated.png" alt="Revitalis NightRest Sleep Formula" class="spotlight-bottle-img" loading="lazy">
+            </div>
+            <div class="spotlight-text-wrap">
+              <span class="spotlight-badge navy">Circadian Restoration Protocol</span>
+              <h3>End Chronic Sleeplessness Permanently</h3>
+              <p>Achieve deep, uninterrupted nocturnal recovery without morning sluggishness. 100% non-habit forming clinical formula.</p>
+              <div class="spotlight-actions">
+                <a href="#catalog" class="btn btn-primary navy-cta">
+                  Shop Revitalis NightRest
+                  <span class="icon-svg" style="width: 16px; height: 16px;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION: CLEAN CLINICAL STANDARDS (Fixed Layout)
+         =================================================================== -->
+    <section class="section-ingredients" id="ingredients">
+      <div class="container ingredients-grid">
+        
+        <div class="ingredients-content">
+          <div class="eyebrow-tag">Pharmaceutical Integrity</div>
+          <h2>Clean Clinical Standards</h2>
+          <p>
+            Every Revitalis formula is manufactured in an FDA-registered, cGMP-certified facility. We perform third-party HPLC assays on every batch to guarantee potency, zero heavy metals, and no synthetic adulterants.
+          </p>
+
+          <div class="ingredients-list">
+            <div class="ingredient-item-row">
+              <div class="ingredient-icon-frame">
+                <span class="icon-svg" style="width: 22px; height: 22px;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </span>
+              </div>
+              <div>
+                <h4>Zero Banned Substances</h4>
+                <p>Pure botanical extracts verified free of undeclared pharmaceutical inhibitors, fillers, or synthetic stimulants.</p>
+              </div>
+            </div>
+
+            <div class="ingredient-item-row">
+              <div class="ingredient-icon-frame">
+                <span class="icon-svg" style="width: 22px; height: 22px;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </span>
+              </div>
+              <div>
+                <h4>Standardized Active Compounds</h4>
+                <p>Consistently delivers clinically effective concentrations (50% EGCG, 50% CGA, 200:1 Tongkat Ali, KSM-66® Ashwagandha).</p>
+              </div>
+            </div>
+
+            <div class="ingredient-item-row">
+              <div class="ingredient-icon-frame">
+                <span class="icon-svg" style="width: 22px; height: 22px;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                </span>
+              </div>
+              <div>
+                <h4>Enhanced Bioavailability</h4>
+                <p>Formulated with BioPerine® black pepper extract to enhance nutrient absorption across intestinal walls by up to 200%.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ingredients-visual-wrap">
+          <img src="assets/images/botanical_ingredients_flatlay.jpg" alt="Botanical ingredients flat lay for Revitalis nutraceuticals" width="540" height="520" loading="lazy">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION: FAQ (FREQUENTLY ASKED QUESTIONS - Fixed Accordion)
+         =================================================================== -->
+    <section class="section-faq" id="faq">
+      <div class="container">
+        
+        <div class="section-head-center">
+          <div class="eyebrow-tag">Assistance &amp; Clarification</div>
+          <h2>Frequently Asked Questions</h2>
+          <p>Clear, direct answers regarding our weight loss, male enhancement, anxiety relief, and restorative sleep formulas.</p>
+        </div>
+
+        <div class="faq-accordion-list">
+          
+          <div class="faq-card">
+            <button type="button" class="faq-header-btn" aria-expanded="false">
+              <span>How quickly can I expect results with Revitalis Thermo-Burn?</span>
+              <span class="icon-svg faq-chevron" style="width: 18px; height: 18px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="faq-content-drawer">
+              <p>
+                Most users report appetite reduction and sustained clean energy within the first 48 to 72 hours. Noticeable changes in abdominal bloat typically appear in 7 to 14 days, with significant fat loss milestones occurring between weeks 4 and 12 when taken daily.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-card">
+            <button type="button" class="faq-header-btn" aria-expanded="false">
+              <span>How does Revitalis MaxSize stimulate male enhancement and firmness?</span>
+              <span class="icon-svg faq-chevron" style="width: 18px; height: 18px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="faq-content-drawer">
+              <p>
+                Revitalis MaxSize utilizes high-dose L-Citrulline Malate, AAKG, and 200:1 Tongkat Ali to stimulate nitric oxide synthesis. This dilates micro-arterioles, maximizing the blood volume capacity within the <em>Corpora Cavernosa</em>. As these chambers expand and tissue elasticity increases, users observe visible increases in erection firmness, shaft thickness (girth), and overall dimensions.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-card">
+            <button type="button" class="faq-header-btn" aria-expanded="false">
+              <span>How does Revitalis CalmEase relieve anxiety without causing sedation?</span>
+              <span class="icon-svg faq-chevron" style="width: 18px; height: 18px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="faq-content-drawer">
+              <p>
+                CalmEase combines clinically validated KSM-66® Ashwagandha, L-Theanine, and Magnesium Glycinate to lower excess cortisol and promote soothing alpha brain waves (8–12 Hz). It melts away chronic physical tension and racing thoughts while keeping you completely alert, focused, and energized.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-card">
+            <button type="button" class="faq-header-btn" aria-expanded="false">
+              <span>How does Revitalis NightRest restore deep REM and slow-wave sleep?</span>
+              <span class="icon-svg faq-chevron" style="width: 18px; height: 18px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="faq-content-drawer">
+              <p>
+                Revitalis NightRest re-synchronizes the body's natural circadian master clock using standardized Valerian Root, Melatonin, and L-Theanine. It accelerates sleep onset latency by up to 58% and prolongs restorative Stage 3 delta repair sleep, allowing you to wake up revitalized with zero morning grogginess or dependency.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-card">
+            <button type="button" class="faq-header-btn" aria-expanded="false">
+              <span>Are Revitalis supplements safe to take together?</span>
+              <span class="icon-svg faq-chevron" style="width: 18px; height: 18px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="faq-content-drawer">
+              <p>
+                Yes. Our formulas are designed to work synergistically. Many clients stack Revitalis Thermo-Burn in the morning for metabolic lipolysis, Revitalis CalmEase during stressful work hours, Revitalis MaxSize for peak male virility, and NightRest before bed for restorative cellular recovery.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-card">
+            <button type="button" class="faq-header-btn" aria-expanded="false">
+              <span>What is the 30-Day Money-Back Guarantee policy?</span>
+              <span class="icon-svg faq-chevron" style="width: 18px; height: 18px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="faq-content-drawer">
+              <p>
+                We stand behind our clinical formulas 100%. If you are not thoroughly satisfied with your physical results within 30 days of receiving your order, simply return the bottles for a prompt, courteous 100% refund of your purchase price.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================
+       FOOTER
+       =================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <div class="footer-brand-col">
+          <a href="#hero" class="brand-logo">
+            <img src="assets/images/revitalis_logo.png" alt="Revitalis Supplements Emblem" class="brand-logo-img" style="width: 38px; height: 38px;" loading="lazy">
+            <div class="brand-text">
+              <span class="brand-name" style="color: #FFFFFF;">REVITALIS SUPPLEMENTS</span>
+              <span class="brand-tagline" style="color: rgba(255,255,255,0.6);">Weight Loss, Male Enhancement &amp; Wellness</span>
+            </div>
+          </a>
+          <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-top: 15px; line-height: 1.6;">
+            Providing high-potency, third-party tested dietary supplements for metabolic health, sustainable fat loss, clinical male enhancement, anxiety relief, and restorative sleep.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Weight Loss Line</h4>
+          <ul>
+            <li><a href="#catalog">Revitalis Thermo-Burn Max</a></li>
+            <li><a href="#catalog">Carb Intercept Blocker</a></li>
+            <li><a href="#catalog">Green Coffee Extract Pure</a></li>
+            <li><a href="#transformations">Documented Results</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Male Enhancement Line</h4>
+          <ul>
+            <li><a href="#catalog">Revitalis MaxSize XL Matrix</a></li>
+            <li><a href="#catalog">Revitalis TitanXL Hardness</a></li>
+            <li><a href="#catalog">Alpha Virility Matrix</a></li>
+            <li><a href="#mens-performance">The Science of Male Enhancement</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Stress &amp; Sleep Line</h4>
+          <ul>
+            <li><a href="#catalog">Revitalis CalmEase Anxiety</a></li>
+            <li><a href="#catalog">Revitalis NightRest Sleep</a></li>
+            <li><a href="#anxiety-science">Neuro-Calm Science</a></li>
+            <li><a href="#sleep-science">Circadian Sleep Science</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-row">
+        <p>&copy; 2026 REVITALIS SUPPLEMENTS INC. All Rights Reserved. Statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       SLIDE-IN SHOPPING CART DRAWER (Opens when Cart is Clicked)
+       =================================================================== -->
+  <div class="cart-backdrop" id="cartBackdrop">
+    <aside class="cart-drawer" role="dialog" aria-labelledby="cartDrawerTitle">
+      
+      <div class="cart-drawer-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="icon-svg" style="width: 20px; height: 20px; color: var(--primary);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+          </span>
+          <h3 id="cartDrawerTitle" style="font-size: 1.15rem; font-weight: 700;">Your Shopping Bag</h3>
+        </div>
+        
+        <button type="button" class="btn-close-cart close-cart-trigger" aria-label="Close cart drawer">
+          <span class="icon-svg" style="width: 18px; height: 18px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </span>
+        </button>
+      </div>
+
+      <!-- Cart Item Rows Container -->
+      <div class="cart-items-scroll" id="cartItemsScroll">
+        <!-- Dynamically rendered via app.js -->
+      </div>
+
+
+      <!-- Subtotal & Checkout Button -->
+      <div class="cart-drawer-footer">
+        <div class="cart-subtotal-row">
+          <span style="font-size: 1rem; color: var(--text-body); font-weight: 600;">Subtotal</span>
+          <span style="font-size: 1.25rem; font-weight: 800; color: var(--text-headline);" id="cartSubtotalAmount">$0.00</span>
+        </div>
+        <p style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 15px;">
+          Taxes and shipping calculated at checkout. Backed by our 30-day money-back guarantee.
+        </p>
+        <button type="button" class="btn btn-primary btn-checkout-drawer" id="btnDrawerCheckout">
+          Proceed to Checkout
+          <span class="icon-svg" style="width: 16px; height: 16px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </button>
+      </div>
+
+    </aside>
+  </div>
+
+  <!-- ===================================================================
+       EXPRESS CLINICAL CHECKOUT (Hidden Modal Overlay - Never on Page Body)
+       =================================================================== -->
+  <div class="modal-backdrop" id="checkoutModal">
+    <div class="modal-window checkout-modal-window">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <img src="assets/images/revitalis_logo.png" alt="Revitalis Logo" style="width: 28px; height: 28px; border-radius: 50%;" loading="lazy">
+          <h3 style="font-size: 1.15rem; font-weight: 700;">Express Clinical Checkout</h3>
+        </div>
+        <button type="button" class="btn-close-modal" id="btnCloseCheckoutModal" aria-label="Close checkout">
+          <span class="icon-svg" style="width: 18px; height: 18px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </span>
+        </button>
+      </div>
+
+      <div class="checkout-modal-body">
+        <div class="checkout-security-banner">
+          <span class="icon-svg" style="width: 16px; height: 16px; color: var(--primary);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </span>
+          <span>256-Bit SSL Encrypted & Discreet Packaging Guaranteed</span>
+        </div>
+
+        <form id="checkoutOrderForm" onsubmit="event.preventDefault();">
+          <!-- STEP INDICATOR -->
+          <div class="checkout-steps-indicator">
+            <div class="checkout-step-pill active" id="stepPillDetails">
+              <span class="step-num">1</span>
+              <span>Your Details</span>
+            </div>
+            <span class="checkout-step-line"></span>
+            <div class="checkout-step-pill" id="stepPillPayment">
+              <span class="step-num">2</span>
+              <span>Payment</span>
+            </div>
+          </div>
+
+          <!-- ============ STEP 1: CUSTOMER & SHIPPING DETAILS ============ -->
+          <div class="checkout-step" id="checkoutStepDetails">
+
+            <div class="form-row-2col">
+              <div class="form-field">
+                <label for="coFirstName">First Name</label>
+                <input type="text" id="coFirstName" required placeholder="John">
+              </div>
+              <div class="form-field">
+                <label for="coLastName">Last Name</label>
+                <input type="text" id="coLastName" required placeholder="Doe">
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="coEmail">Email Address (for order tracking)</label>
+              <input type="email" id="coEmail" required placeholder="john.doe@example.com">
+            </div>
+
+            <div class="form-field">
+              <label for="coAddress">Shipping Address</label>
+              <input type="text" id="coAddress" required placeholder="123 Wellness Blvd, Suite 400">
+            </div>
+
+            <div class="form-row-2col">
+              <div class="form-field">
+                <label for="coCity">City</label>
+                <input type="text" id="coCity" required placeholder="New York">
+              </div>
+              <div class="form-field">
+                <label for="coZip">Postal Code</label>
+                <input type="text" id="coZip" required placeholder="10001">
+              </div>
+            </div>
+
+            <div class="order-summary-box">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                <span>Order Subtotal:</span>
+                <strong id="modalSubtotalVal">$0.00</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                <span>Discreet Packaging &amp; Shipping:</span>
+                <span style="color: var(--primary); font-weight: 700;">FREE</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 1.1rem; border-top: 1px solid var(--border-light); padding-top: 8px; margin-top: 8px;">
+                <strong>Total Amount:</strong>
+                <strong style="color: var(--primary);" id="modalTotalVal">$0.00</strong>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-primary" style="width: 100%; margin-top: 15px;" id="btnContinueToPayment">
+              Continue to Payment
+              <span class="icon-svg" style="width: 16px; height: 16px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </button>
+          </div>
+
+          <!-- ============ STEP 2: PAYMENT METHOD SELECTION ============ -->
+          <div class="checkout-step" id="checkoutStepPayment" hidden>
+
+            <button type="button" class="checkout-back-btn" id="btnBackToDetails">
+              <span class="icon-svg" style="width: 15px; height: 15px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </span>
+              Back to details
+            </button>
+
+            <div class="payment-section-head">
+              <h4>Select a Payment Method</h4>
+              <p>Choose how you would like to pay. Secure payment instructions are emailed to you the moment your order is placed.</p>
+            </div>
+
+            <div class="payment-method-list" role="radiogroup" aria-label="Payment method">
+
+              <!-- Venmo -->
+              <label class="payment-method-option" for="payVenmo">
+                <input type="radio" name="paymentMethod" id="payVenmo" value="Venmo">
+                <span class="pay-icon">
+                  <svg viewBox="0 0 32 32" aria-hidden="true">
+                    <rect width="32" height="32" rx="9" fill="#008CFF"></rect>
+                    <text x="16" y="22.5" text-anchor="middle" font-family="Outfit, Segoe UI, sans-serif" font-size="17" font-weight="800" fill="#FFFFFF">V</text>
+                  </svg>
+                </span>
+                <span class="pay-method-text">
+                  <span class="pay-method-name">Venmo</span>
+                  <span class="pay-method-desc">Pay instantly from your Venmo balance</span>
+                </span>
+                <span class="pay-check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+              </label>
+
+              <!-- Zelle -->
+              <label class="payment-method-option" for="payZelle">
+                <input type="radio" name="paymentMethod" id="payZelle" value="Zelle">
+                <span class="pay-icon">
+                  <svg viewBox="0 0 32 32" aria-hidden="true">
+                    <rect width="32" height="32" rx="9" fill="#6D1ED4"></rect>
+                    <text x="16" y="22.5" text-anchor="middle" font-family="Outfit, Segoe UI, sans-serif" font-size="17" font-weight="800" fill="#FFFFFF">Z</text>
+                  </svg>
+                </span>
+                <span class="pay-method-text">
+                  <span class="pay-method-name">Zelle</span>
+                  <span class="pay-method-desc">Direct bank-to-bank transfer, no fees</span>
+                </span>
+                <span class="pay-check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+              </label>
+
+              <!-- Chime -->
+              <label class="payment-method-option" for="payChime">
+                <input type="radio" name="paymentMethod" id="payChime" value="Chime">
+                <span class="pay-icon">
+                  <svg viewBox="0 0 32 32" aria-hidden="true">
+                    <rect width="32" height="32" rx="9" fill="#1EC677"></rect>
+                    <text x="16" y="22.5" text-anchor="middle" font-family="Outfit, Segoe UI, sans-serif" font-size="17" font-weight="800" fill="#FFFFFF">C</text>
+                  </svg>
+                </span>
+                <span class="pay-method-text">
+                  <span class="pay-method-name">Chime</span>
+                  <span class="pay-method-desc">Send from your Chime spending account</span>
+                </span>
+                <span class="pay-check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+              </label>
+
+              <!-- Cash App -->
+              <label class="payment-method-option" for="payCashApp">
+                <input type="radio" name="paymentMethod" id="payCashApp" value="Cash App">
+                <span class="pay-icon">
+                  <svg viewBox="0 0 32 32" aria-hidden="true">
+                    <rect width="32" height="32" rx="9" fill="#00D632"></rect>
+                    <text x="16" y="23" text-anchor="middle" font-family="Outfit, Segoe UI, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">$</text>
+                  </svg>
+                </span>
+                <span class="pay-method-text">
+                  <span class="pay-method-name">Cash App</span>
+                  <span class="pay-method-desc">Pay with your Cashtag in seconds</span>
+                </span>
+                <span class="pay-check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+              </label>
+
+              <!-- Wire Transfer -->
+              <label class="payment-method-option" for="payWire">
+                <input type="radio" name="paymentMethod" id="payWire" value="Wire Transfer">
+                <span class="pay-icon">
+                  <svg viewBox="0 0 32 32" aria-hidden="true">
+                    <rect width="32" height="32" rx="9" fill="#0F1D2B"></rect>
+                    <g stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" fill="none">
+                      <path d="M7.5 14 L16 9 L24.5 14"></path>
+                      <path d="M10.5 15.5 V21"></path>
+                      <path d="M14 15.5 V21"></path>
+                      <path d="M18 15.5 V21"></path>
+                      <path d="M21.5 15.5 V21"></path>
+                      <path d="M8 23.5 H24"></path>
+                    </g>
+                  </svg>
+                </span>
+                <span class="pay-method-text">
+                  <span class="pay-method-name">Wire Transfer</span>
+                  <span class="pay-method-desc">Bank wire, clears in 1&ndash;2 business days</span>
+                </span>
+                <span class="pay-check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+              </label>
+
+            </div>
+
+            <div class="payment-total-recap">
+              <span>Total Amount Due</span>
+              <strong id="payStepTotalVal">$0.00</strong>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 15px;" id="btnConfirmOrder" disabled>
+              Confirm &amp; Place Order
+            </button>
+
+            <p class="payment-footnote">
+              <span class="icon-svg" style="width: 13px; height: 13px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              </span>
+              Your details are encrypted. No card information is stored on this site.
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Stack -->
+  <div class="toast-stack" id="toastStack" aria-live="polite"></div>
+
+  <!-- 3D Three.js Engine & Interactive Hero Module -->
+  <script src="assets/js/three.min.js"></script>
+  <script src="assets/js/hero-3d.js"></script>
+
+  <!-- Application Logic -->
+  <script src="assets/js/products-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
