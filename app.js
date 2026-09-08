@@ -6,6 +6,29 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
+  // 0. VIEWPORT HEIGHT FALLBACK
+  // =========================================================================
+  // Browsers that support dvh handle this in CSS. Older engines (notably
+  // iOS Safari before 15.4) resolve 100vh to the toolbar-less height, which
+  // pushed the cart subtotal / checkout buttons below the visible screen.
+  const supportsDvh = window.CSS && CSS.supports && CSS.supports('height', '100dvh');
+
+  function syncViewportHeight() {
+    const visual = window.visualViewport;
+    const height = visual ? visual.height : window.innerHeight;
+    document.documentElement.style.setProperty('--app-vh', `${height / 100}px`);
+  }
+
+  if (!supportsDvh) {
+    syncViewportHeight();
+    window.addEventListener('resize', syncViewportHeight);
+    window.addEventListener('orientationchange', syncViewportHeight);
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener('resize', syncViewportHeight);
+    }
+  }
+
+  // =========================================================================
   // 1. DATA STATE & PRODUCTS
   // =========================================================================
   const PRODUCTS = window.REVITALIS_PRODUCTS;
