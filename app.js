@@ -295,12 +295,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (btnDrawerCheckout) {
     btnDrawerCheckout.addEventListener('click', () => {
-      closeCartDrawer();
+      // Keep body scroll locked throughout the transition so the page
+      // never jumps back to the hero section on mobile.
+      document.body.style.overflow = 'hidden';
+
+      // Close the cart drawer (without releasing scroll lock)
+      if (cartBackdrop) cartBackdrop.classList.remove('open');
+
       if (checkoutModal) {
         showDetailsStep();
         clearPaymentSelection();
         checkoutModal.classList.add('open');
-        document.body.style.overflow = 'hidden';
+        // Scroll modal body back to top in case user had scrolled it before
+        const modalBody = checkoutModal.querySelector('.checkout-modal-body');
+        if (modalBody) modalBody.scrollTop = 0;
+        const modalWindow = checkoutModal.querySelector('.modal-window');
+        if (modalWindow) modalWindow.scrollTop = 0;
       }
     });
   }
