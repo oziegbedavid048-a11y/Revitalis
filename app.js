@@ -334,13 +334,71 @@ document.addEventListener('DOMContentLoaded', () => {
       const paymentMethod = getSelectedPaymentMethod();
       if (!paymentMethod) return;
 
-      closeCheckoutModal();
-      checkoutOrderForm.reset();
-      clearPaymentSelection();
-      showDetailsStep();
-      cart = [];
-      updateCartUI();
-      showToast(`Order confirmed! ${paymentMethod} payment instructions sent to your email.`);
+      // ── Gather customer details from the form ──────────────────────────
+      const firstName = (document.getElementById('coFirstName')?.value || '').trim();
+      const lastName  = (document.getElementById('coLastName')?.value  || '').trim();
+      const fullName  = [firstName, lastName].filter(Boolean).join(' ') || 'Customer';
+      const email     = (document.getElementById('coEmail')?.value     || '').trim();
+      const address   = (document.getElementById('coAddress')?.value   || '').trim();
+      const city      = (document.getElementById('coCity')?.value      || '').trim();
+      const zip       = (document.getElementById('coZip')?.value       || '').trim();
+
+      // ── Build order summary lines ──────────────────────────────────────
+      const total = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+      const orderLines = cart.map(item =>
+        `  - ${item.name} x${item.quantity} -- ${formatMoney(item.price * item.quantity)}`
+      ).join('\n');
+
+      // ── Compose the pre-filled email subject and body ──────────────────
+      const subject = `Payment Order - ${paymentMethod} - ${fullName}`;
+
+      const body = [
+        `Hello Revitalis Supplements,`,
+        ``,
+        `I would like to make a payment for my order.`,
+        ``,
+        `--------------------------`,
+        `CUSTOMER DETAILS`,
+        `--------------------------`,
+        `Name:             ${fullName}`,
+        `Email:            ${email}`,
+        `Shipping Address: ${[address, city, zip].filter(Boolean).join(', ')}`,
+        ``,
+        `--------------------------`,
+        `ORDER SUMMARY`,
+        `--------------------------`,
+        orderLines,
+        ``,
+        `Total Amount Due: ${formatMoney(total)}`,
+        ``,
+        `--------------------------`,
+        `PAYMENT METHOD`,
+        `--------------------------`,
+        `I would like to pay via: ${paymentMethod}`,
+        ``,
+        `Please send me the payment instructions / account details for ${paymentMethod}.`,
+        ``,
+        `Thank you,`,
+        `${fullName}`
+      ].join('\n');
+
+      // ── Open the user's default email client ──────────────────────────
+      const mailtoURL = 'mailto:payment@revitalisupplements.com'
+        + '?subject=' + encodeURIComponent(subject)
+        + '&body='    + encodeURIComponent(body);
+
+      window.location.href = mailtoURL;
+
+      // ── Clean up cart and modal after a brief delay ───────────────────
+      setTimeout(() => {
+        closeCheckoutModal();
+        checkoutOrderForm.reset();
+        clearPaymentSelection();
+        showDetailsStep();
+        cart = [];
+        updateCartUI();
+        showToast('Email app opened! Send your ' + paymentMethod + ' payment to payment@revitalisupplements.com');
+      }, 600);
     });
   }
 
